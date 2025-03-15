@@ -2,5 +2,6 @@ venv/
 __pycache__/
 *.pyc
 *.log
-data/**/** # Exclude Neo4j data, but keep the data/ folder in git for structure
+data/ # Track the data/ folder itself
+data/** # Ignore all files and subdirectories within data/
 downloaded_repo/
