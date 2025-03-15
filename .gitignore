@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 *.log
 data/neo4j/  # Exclude Neo4j data, but keep the data/ folder in git for structure
+downloaded_repo/
