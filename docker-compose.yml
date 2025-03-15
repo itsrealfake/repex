@@ -1,0 +1,13 @@
+# docker-compose.yml
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j_git_app
+    ports:
+      - "7474:7474"  # HTTP interface
+      - "7687:7687"  # Bolt protocol
+    environment:
+      - NEO4J_AUTH=neo4j/password  # Set initial username/password
+    volumes:
+      - ./data/neo4j:/data  # Persist data in project folder
+    restart: unless-stopped
